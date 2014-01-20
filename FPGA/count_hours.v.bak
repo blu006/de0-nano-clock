@@ -1,0 +1,41 @@
+module count_hours(
+	manual_inc,
+	automatic_inc,
+	ones_digit,
+	tens_digit,
+	count_out
+);
+
+// port declarations
+input					manual_inc;
+input					automatic_inc;
+output	[3:0]		ones_digit;
+output	[3:0]		tens_digit;
+output 	reg		count_out;
+
+// wire declarations
+wire seconds_carry;
+reg module_reset;
+reg pre_count;
+reg increment;
+
+// teh logikz
+
+initial module_reset <= 0;
+
+bcd_counter(module_reset, increment, ones_digit, seconds_carry);
+bcd_counter(module_reset, seconds_carry, tens_digit, );
+
+always begin
+	if (manual_inc) begin
+		count_out <= 0;
+		increment <= 1;
+	end else begin
+		increment <= automatic_inc;
+		count_out <= pre_count;
+	end
+		module_reset <= (tens_digit == 4'h6);
+		pre_count <= module_reset;
+end
+
+endmodule

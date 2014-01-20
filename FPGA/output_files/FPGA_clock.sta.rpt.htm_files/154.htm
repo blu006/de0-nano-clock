@@ -1,0 +1,584 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Minimum Clock to Output Times</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Data Port</TH>
+<TH>Clock Port</TH>
+<TH>Rise</TH>
+<TH>Fall</TH>
+<TH>Clock Edge</TH>
+<TH>Clock Reference</TH>
+</TR>
+</thead><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >KEY[0]</TD>
+<TD >4.699</TD>
+<TD >4.643</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >KEY[0]</TD>
+<TD >4.977</TD>
+<TD >4.960</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >KEY[0]</TD>
+<TD >4.918</TD>
+<TD >4.746</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >KEY[0]</TD>
+<TD >4.956</TD>
+<TD >4.935</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >KEY[0]</TD>
+<TD >6.356</TD>
+<TD >6.076</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >KEY[0]</TD>
+<TD >5.073</TD>
+<TD >4.920</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >KEY[0]</TD>
+<TD >4.842</TD>
+<TD >4.802</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >KEY[0]</TD>
+<TD >4.699</TD>
+<TD >4.643</TD>
+<TD >Rise</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >KEY[0]</TD>
+<TD >6.124</TD>
+<TD >6.084</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >KEY[0]</TD>
+<TD >6.394</TD>
+<TD >6.394</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >KEY[0]</TD>
+<TD >6.218</TD>
+<TD >6.187</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >KEY[0]</TD>
+<TD >6.405</TD>
+<TD >6.373</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >KEY[0]</TD>
+<TD >7.774</TD>
+<TD >7.510</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >KEY[0]</TD>
+<TD >6.365</TD>
+<TD >6.356</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >KEY[0]</TD>
+<TD >6.380</TD>
+<TD >6.243</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >KEY[0]</TD>
+<TD >6.124</TD>
+<TD >6.084</TD>
+<TD >Fall</TD>
+<TD >KEY[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LED[*]</TD>
+<TD >SW[0]</TD>
+<TD >4.824</TD>
+<TD >4.884</TD>
+<TD >Rise</TD>
+<TD >SW[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;LED[6]</TD>
+<TD >SW[0]</TD>
+<TD >4.824</TD>
+<TD >4.884</TD>
+<TD >Rise</TD>
+<TD >SW[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;LED[7]</TD>
+<TD >SW[0]</TD>
+<TD >6.793</TD>
+<TD >6.700</TD>
+<TD >Rise</TD>
+<TD >SW[0]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >count_div[12]</TD>
+<TD >3.561</TD>
+<TD >3.578</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[8]</TD>
+<TD >count_div[12]</TD>
+<TD >4.025</TD>
+<TD >3.949</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >count_div[12]</TD>
+<TD >4.333</TD>
+<TD >4.330</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[10]</TD>
+<TD >count_div[12]</TD>
+<TD >4.051</TD>
+<TD >3.950</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >count_div[12]</TD>
+<TD >4.145</TD>
+<TD >4.189</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[12]</TD>
+<TD >count_div[12]</TD>
+<TD >3.878</TD>
+<TD >3.811</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >count_div[12]</TD>
+<TD >4.313</TD>
+<TD >4.380</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[14]</TD>
+<TD >count_div[12]</TD>
+<TD >3.856</TD>
+<TD >3.797</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >count_div[12]</TD>
+<TD >5.713</TD>
+<TD >5.447</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[16]</TD>
+<TD >count_div[12]</TD>
+<TD >3.561</TD>
+<TD >3.578</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >count_div[12]</TD>
+<TD >4.303</TD>
+<TD >4.362</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[18]</TD>
+<TD >count_div[12]</TD>
+<TD >4.050</TD>
+<TD >3.991</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >count_div[12]</TD>
+<TD >4.195</TD>
+<TD >4.169</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >count_div[12]</TD>
+<TD >4.052</TD>
+<TD >4.010</TD>
+<TD >Rise</TD>
+<TD >count_div[12]</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.630</TD>
+<TD >3.595</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.907</TD>
+<TD >3.911</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.803</TD>
+<TD >3.696</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.953</TD>
+<TD >3.887</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >5.287</TD>
+<TD >5.028</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.961</TD>
+<TD >3.871</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.773</TD>
+<TD >3.754</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >3.630</TD>
+<TD >3.595</TD>
+<TD >Rise</TD>
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.409</TD>
+<TD >3.374</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.686</TD>
+<TD >3.690</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.630</TD>
+<TD >3.475</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.800</TD>
+<TD >3.666</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >5.066</TD>
+<TD >4.807</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.790</TD>
+<TD >3.650</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.552</TD>
+<TD >3.533</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >3.409</TD>
+<TD >3.374</TD>
+<TD >Rise</TD>
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.289</TD>
+<TD >3.233</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.567</TD>
+<TD >3.550</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.458</TD>
+<TD >3.336</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.546</TD>
+<TD >3.525</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >4.946</TD>
+<TD >4.666</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.605</TD>
+<TD >3.510</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.432</TD>
+<TD >3.392</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >3.289</TD>
+<TD >3.233</TD>
+<TD >Rise</TD>
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >GPIO_0[*]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.571</TD>
+<TD >4.536</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[9]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.848</TD>
+<TD >4.852</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[11]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.682</TD>
+<TD >4.637</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[13]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.857</TD>
+<TD >4.828</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[15]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >6.228</TD>
+<TD >5.969</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[17]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.829</TD>
+<TD >4.812</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[19]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.714</TD>
+<TD >4.695</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;GPIO_0[21]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >4.571</TD>
+<TD >4.536</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LED[*]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >2.433</TD>
+<TD >&nbsp;</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;LED[0]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >2.433</TD>
+<TD >&nbsp;</TD>
+<TD >Rise</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >LED[*]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >&nbsp;</TD>
+<TD >2.496</TD>
+<TD >Fall</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;LED[0]</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >&nbsp;</TD>
+<TD >2.496</TD>
+<TD >Fall</TD>
+<TD >divide_by_50M:u1|outclk</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

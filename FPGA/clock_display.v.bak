@@ -1,0 +1,5 @@
+module clock_display(
+	in_clk,
+	segment_out,
+	seven_seg_out
+);

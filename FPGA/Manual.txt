@@ -1,0 +1,48 @@
+Brandon Lu                    31 December 2013
+
+                                 FPGA Clock
+
+So, let me explain what all of this insanity is...
+The FPGA accepts a clock input from an oscillator at 32.768kHz from pin A8,
+divides it by 2^15 (32,768) and gets its seconds signal from this.
+
+This signal passes into BCD counter which then feeds a %10 signal into the
+next digit which counts tens of seconds.  When this digit becomes six, a
+signal is asserted to reset the digit and the previous seconds digit and
+increment the minutes.  We call this signal %60Hz because it is asserted every
+60 seconds.
+
+In the minutes section, everything is basically the same as it is in the
+seconds section except it is called the minutes section (pretty obvious).
+
+In the hours section, that is when things get a bit more complicated.  The
+final design revision will have both a 12 and 24 hour mode (CAUTION: do not
+try to set this to 12 hours when the clock is beyond 12 hours(You won't break
+anything except a bit of logic)).  In the 12 hour mode, there is a bit of
+complicated logic that I don't exactly care to explain (and it involves zero).
+
+With that, there will be an AM/PM indicator for the 12 hour mode.
+
+And I haven't decided about days yet at this moment, so don't bother me about
+that yet.
+
+Nor have I decided about months.
+
+Nor have I decided about years. (Leap years are hard though!)
+
+Oh yes, and here's a pinout of the "GPIO ports."  You should be able to see
+the translation from the ports to pins when you view the signal assignments.
+GPIO_0_IN0   = hardware 32.768kHz oscillator
+GPIO_0_IN1 &
+ GPIO_[01:03]= Seconds digit
+GPIO_[04:07] = Tens Seconds digit
+GPIO_[08:11] = Minutes digit
+GPIO_[12:15] = Tens Minutes digit
+GPIO_[16:19] = Hours digit
+GPIO_[20:23] = Tens Hours digit
+GPIO_24      = AM
+GPIO_25      = PM
+GPIO_26      = Seconds Tick
+GPIO_27      = SPI MOSI
+GPIO_28      = SPI SCK
+GPIO_29      = SPI inv CE

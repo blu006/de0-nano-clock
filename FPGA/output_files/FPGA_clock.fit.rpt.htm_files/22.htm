@@ -1,0 +1,294 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Fitter Resource Utilization by Entity</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Compilation Hierarchy Node</TH>
+<TH>Logic Cells</TH>
+<TH>Dedicated Logic Registers</TH>
+<TH>I/O Registers</TH>
+<TH>Memory Bits</TH>
+<TH>M9Ks</TH>
+<TH>DSP Elements</TH>
+<TH>DSP 9x9</TH>
+<TH>DSP 18x18</TH>
+<TH>Pins</TH>
+<TH>Virtual Pins</TH>
+<TH>LUT-Only LCs</TH>
+<TH>Register-Only LCs</TH>
+<TH>LUT/Register LCs</TH>
+<TH>Full Hierarchy Name</TH>
+<TH>Library Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >|DE0_Nano</TD>
+<TD >146 (13)</TD>
+<TD >79 (13)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >150</TD>
+<TD >0</TD>
+<TD >67 (0)</TD>
+<TD >1 (0)</TD>
+<TD >78 (13)</TD>
+<TD >|DE0_Nano</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|clock_display:u6|</TD>
+<TD >34 (11)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >30 (7)</TD>
+<TD >0 (0)</TD>
+<TD >4 (4)</TD>
+<TD >|DE0_Nano|clock_display:u6</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_to_seven_seg:comb_39|</TD>
+<TD >7 (7)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >7 (7)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >|DE0_Nano|clock_display:u6|bcd_to_seven_seg:comb_39</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|clock_mux:u1|</TD>
+<TD >16 (16)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >16 (16)</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >|DE0_Nano|clock_display:u6|clock_mux:u1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|count_hours:u5|</TD>
+<TD >17 (8)</TD>
+<TD >11 (2)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >6 (6)</TD>
+<TD >1 (1)</TD>
+<TD >10 (1)</TD>
+<TD >|DE0_Nano|count_hours:u5</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u1|</TD>
+<TD >5 (5)</TD>
+<TD >5 (5)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >5 (5)</TD>
+<TD >|DE0_Nano|count_hours:u5|bcd_counter:u1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u2|</TD>
+<TD >4 (4)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >4 (4)</TD>
+<TD >|DE0_Nano|count_hours:u5|bcd_counter:u2</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|count_minutes:u3|</TD>
+<TD >11 (2)</TD>
+<TD >9 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >2 (2)</TD>
+<TD >0 (0)</TD>
+<TD >9 (0)</TD>
+<TD >|DE0_Nano|count_minutes:u3</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u1|</TD>
+<TD >5 (5)</TD>
+<TD >5 (5)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >5 (5)</TD>
+<TD >|DE0_Nano|count_minutes:u3|bcd_counter:u1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u2|</TD>
+<TD >4 (4)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >4 (4)</TD>
+<TD >|DE0_Nano|count_minutes:u3|bcd_counter:u2</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|count_seconds:u2|</TD>
+<TD >10 (1)</TD>
+<TD >9 (0)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >1 (1)</TD>
+<TD >0 (0)</TD>
+<TD >9 (0)</TD>
+<TD >|DE0_Nano|count_seconds:u2</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u1|</TD>
+<TD >5 (5)</TD>
+<TD >5 (5)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >5 (5)</TD>
+<TD >|DE0_Nano|count_seconds:u2|bcd_counter:u1</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|bcd_counter:u2|</TD>
+<TD >4 (4)</TD>
+<TD >4 (4)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0 (0)</TD>
+<TD >0 (0)</TD>
+<TD >4 (4)</TD>
+<TD >|DE0_Nano|count_seconds:u2|bcd_counter:u2</TD>
+<TD >work</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >&nbsp;&nbsp;&nbsp;|divide_by_50M:u1|</TD>
+<TD >61 (61)</TD>
+<TD >33 (33)</TD>
+<TD >0 (0)</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >0</TD>
+<TD >28 (28)</TD>
+<TD >0 (0)</TD>
+<TD >33 (33)</TD>
+<TD >|DE0_Nano|divide_by_50M:u1</TD>
+<TD >work</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

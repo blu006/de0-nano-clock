@@ -1,0 +1,144 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<HTML><HEAD>
+<TITLE>Control Signals</TITLE>
+
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/base.css">
+<link rel="stylesheet" type="text/css" href="css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="css/jquery.layout-latest.css">
+<link rel="stylesheet" type="text/css" href="css/override.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jquery.layout-latest.js"></script>
+
+
+</HEAD>
+
+<BODY>
+<TABLE>
+<thead><TR  bgcolor="#BFBFBF">
+<TH>Name</TH>
+<TH>Location</TH>
+<TH>Fan-Out</TH>
+<TH>Usage</TH>
+<TH>Global</TH>
+<TH>Global Resource Used</TH>
+<TH>Global Line Name</TH>
+<TH>Enable Signal Source Name</TH>
+</TR>
+</thead><tbody><TR >
+<TD >CLOCK_50</TD>
+<TD >PIN_R8</TD>
+<TD >46</TD>
+<TD >Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK18</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_div[12]</TD>
+<TD >FF_X27_Y33_N29</TD>
+<TD >4</TD>
+<TD >Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK13</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_hours:u5|bcd_counter:u1|carry_out</TD>
+<TD >FF_X25_Y32_N19</TD>
+<TD >4</TD>
+<TD >Clock</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_hours:u5|increment</TD>
+<TD >LCCOMB_X25_Y32_N24</TD>
+<TD >5</TD>
+<TD >Clock</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_hours:u5|module_reset</TD>
+<TD >LCCOMB_X24_Y32_N4</TD>
+<TD >11</TD>
+<TD >Async. clear, Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK10</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_minutes:u3|Equal0~0</TD>
+<TD >LCCOMB_X23_Y32_N28</TD>
+<TD >10</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_minutes:u3|bcd_counter:u1|carry_out</TD>
+<TD >FF_X23_Y32_N23</TD>
+<TD >4</TD>
+<TD >Clock</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_minutes:u3|increment</TD>
+<TD >LCCOMB_X24_Y31_N12</TD>
+<TD >5</TD>
+<TD >Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK11</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_seconds:u2|Equal0~0</TD>
+<TD >LCCOMB_X20_Y31_N16</TD>
+<TD >10</TD>
+<TD >Async. clear</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >count_seconds:u2|bcd_counter:u1|carry_out</TD>
+<TD >FF_X20_Y31_N15</TD>
+<TD >4</TD>
+<TD >Clock</TD>
+<TD >no</TD>
+<TD >--</TD>
+<TD >--</TD>
+<TD >--</TD>
+</TR>
+</tbody><tbody><TR >
+<TD >divide_by_50M:u1|outclk</TD>
+<TD >FF_X34_Y25_N31</TD>
+<TD >5</TD>
+<TD >Clock</TD>
+<TD >yes</TD>
+<TD >Global Clock</TD>
+<TD >GCLK12</TD>
+<TD >--</TD>
+</TR>
+</tbody></TABLE>
+
+<noscript>JavaScript must be enabled to view the report.</noscript>
+</BODY>
+</HTML>

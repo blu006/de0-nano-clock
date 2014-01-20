@@ -1,0 +1,13 @@
+module spi(
+	clk,
+	parallelDataIn,
+	serialOut,
+	inv_cs
+);
+
+//  ports
+input clk;
+input [0:7] parrallelDataIn;
+output serialOut, inv_cs;
+
+endmodule

@@ -1,0 +1,10 @@
+toggle (
+in
+out
+);
+
+input in;
+output out;
+
+always @(posedge in)
+	out <= ~out;
