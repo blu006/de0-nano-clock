@@ -1,6 +1,0 @@
-module count_60(
-ones_digit,
-tens_digit,
-increment,
-count_out
-);
