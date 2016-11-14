@@ -1,4 +1,4 @@
-Brandon Lu                    31 December 2013
+blu006                        31 December 2013
 
                                  FPGA Clock
 
